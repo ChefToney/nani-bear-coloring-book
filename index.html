@@ -6,34 +6,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nani Bear Coloring Studio</title>
 
-<script src="./nani-coloring-engine.js?v=10" defer></script>
+<script src="./nani-coloring-engine.js?v=11" defer></script>
 
 <style>
+* { box-sizing: border-box; }
 body {
-  margin: 0;
-  padding: 20px;
-  background: #fff0fa;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  color: #703b83;
+  margin: 0; padding: 22px 12px 30px;
+  background: radial-gradient(circle at top left,#ffe0f3 0,#fff4fb 42%,#f0e6ff 100%);
+  font-family: Arial, sans-serif; text-align: center; color: #703b83;
 }
-h1 { color: #a34eb8; }
-p { color: #704b7e; }
+.hero {
+  max-width: 1100px; margin: 0 auto 18px; padding: 24px 16px 20px;
+  border: 1px solid #f4c8e8; border-radius: 26px;
+  background: linear-gradient(135deg,#fff 0%,#fff0fa 52%,#f1e6ff 100%);
+  box-shadow: 0 10px 30px #9d58a51c;
+}
+h1 { margin: 0 0 9px; color: #a34eb8; font-size: clamp(27px,5vw,42px); }
+.tagline { margin: 0 auto 13px; max-width: 620px; color: #704b7e; line-height: 1.5; }
+.pills { display:flex; justify-content:center; flex-wrap:wrap; gap:8px; }
+.pills span { background:#fff; border:1px solid #f0cce9; border-radius:999px; padding:7px 12px; font-size:12px; color:#914aa5; font-weight:bold; }
 jl-coloringbook {
-  display: block;
-  max-width: 1100px;
-  margin: 20px auto;
-  background: white;
-  padding: 12px;
-  border-radius: 18px;
+  display: block; max-width: 1100px; margin: 18px auto;
+  background: rgba(255,255,255,.82); padding: 12px;
+  border: 1px solid #f2cdea; border-radius: 24px;
+  box-shadow: 0 12px 34px #8d4e9a20;
 }
+.footer { color:#8a6592; font-size:13px; margin:18px auto 0; }
 </style>
 </head>
 
 <body>
 
-<h1>🐻 Nani Bear Coloring Studio 💕</h1>
-<p>Pick your favorite page, choose your colors, and let your creativity shine!</p>
+<header class="hero"><h1>🐻 Nani Bear Magic Art Studio 💕</h1><p class="tagline">A magical little place to color, decorate, sparkle, and make every Nani Bear picture your own!</p><div class="pills"><span>🌈 Magic Colors</span><span>🎀 Cute Stickers</span><span>✨ Sparkle Time</span><span>🖼️ My Gallery</span></div></header>
 
 <jl-coloringbook maxbrushsize="32">
 
@@ -76,7 +80,7 @@ jl-coloringbook {
 
 </jl-coloringbook>
 
-<p>Made with love by Nani Bear 💗</p>
+<p class="footer">Made with love by Nani Bear 💗 Keep creating, keep shining!</p>
 
 </body>
 </html>
