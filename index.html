@@ -27,7 +27,9 @@ body::after { inset:0; opacity:.32; background-image: radial-gradient(circle,#ff
   background: linear-gradient(135deg,#fff 0%,#fff0fa 52%,#f1e6ff 100%);
   box-shadow: 0 10px 30px #9d58a51c;
 }
-h1 { margin: 0 0 9px; color: #a34eb8; font-size: clamp(27px,5vw,42px); }
+h1 { margin: 0 0 11px; font-family: "Trebuchet MS", "Arial Rounded MT Bold", Arial, sans-serif; font-weight: 900; font-size: clamp(30px,6vw,50px); letter-spacing: .4px; line-height: 1.12; background: linear-gradient(100deg,#ff4fa3 0%,#b34de2 38%,#7a63df 68%,#ff70b8 100%); background-size: 220% auto; background-clip: text; -webkit-background-clip: text; color: transparent; -webkit-text-fill-color: transparent; filter: drop-shadow(0 3px 0 #fff) drop-shadow(0 5px 7px #a34eb855); animation: titleShimmer 5s ease-in-out infinite; }
+@keyframes titleShimmer { 0%,100% { background-position: 0% center; } 50% { background-position: 100% center; } }
+@media(prefers-reduced-motion:reduce) { h1 { animation:none; } }
 .tagline { margin: 0 auto 13px; max-width: 620px; color: #704b7e; line-height: 1.5; }
 .pills { display:flex; justify-content:center; flex-wrap:wrap; gap:8px; }
 .pills span { background:#fff; border:1px solid #f0cce9; border-radius:999px; padding:7px 12px; font-size:12px; color:#914aa5; font-weight:bold; }
